@@ -27,7 +27,14 @@ def has_lower_letters(password):
 
 def raiting_of_password(password):
     score = 0
-    list_of_functions = [has_digit, is_very_long, has_alpha, has_upper_letters, has_lower_letters, has_symbols]
+    list_of_functions = [
+        has_digit,
+        is_very_long,
+        has_alpha,
+        has_upper_letters,
+        has_lower_letters,
+        has_symbols
+    ]
     for function in list_of_functions:
         score += function(password)
     return score * 2
